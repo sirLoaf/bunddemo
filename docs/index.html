@@ -30,23 +30,7 @@ layout: default
       })(window, document, "rtclauncher", "https://rtclauncherapi.luware.com", "https://rtclauncher.luware.com/Content/rtc-launcher.js", "https://rtclauncher.luware.com/Content/rtc-launcher.css");
 </script>
  
-var settings = {
-// Surfly session options can be set here, or at the Company/Plan levels.
-widget_key:'e716a1e2dc3a4448a98971cdaf14ba77',
-};
 
-Surfly.init(settings, function(initResult) {
-    if (initResult.success) {
-        // API calls can now be made!
-        if (!Surfly.isInsideSession) {
-            Surfly.button();
-        }
-    }
-    else{
-        console.log("Surfly was unable to initialize properly.")
-    }
-});
-</script>
 
 
 </body>
