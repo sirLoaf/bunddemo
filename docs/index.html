@@ -30,6 +30,28 @@ layout: default
       })(window, document, "rtclauncher", "https://rtclauncherapi.luware.com", "https://rtclauncher.luware.com/Content/rtc-launcher.js", "https://rtclauncher.luware.com/Content/rtc-launcher.css");
 </script>
      <script>
+          
+<script type="text/javascript">
+      (function (l, u, w, a, r, e, v, t) {
+              var css = u.createElement("link");
+              css.rel = "stylesheet";
+              css.href = e;
+              // insert it at the end of the head in a legacy-friendly manner
+              u.head.insertBefore(css, u.head.childNodes[u.head.childNodes.length - 1].nextSibling);
+
+              var js = u.createElement("script");
+              var el = u.getElementsByTagName("script")[0];
+              js.async = 1;
+              js.id = w;
+              js.src = r;
+              js.onload = js.onreadystatechange = function () {
+                      var rs = this.readyState;
+                      if (rs && rs != "complete" && rs != "loaded") return;
+                      try { rtclauncher.bootstrap(a, v, t); } catch (ex) { }
+              }
+              el.parentNode.insertBefore(js, el);
+      })(window, document, "rtclauncher", "https://rtclauncherapi.luware.com", "https://rtclauncher.luware.com/Content/rtc-launcher.js", "https://rtclauncher.luware.com/Content/rtc-launcher.css");
+</script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
 l.src='https://cobrowsing.dev.luware.com/surfly.js';y.parentNode.insertBefore(l,y);})
